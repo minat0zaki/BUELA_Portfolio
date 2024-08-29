@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6966af07f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/black_logo.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()" aria-label="Close Menu"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" aria-label="Open Menu"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Engineering Student</p>
+                <h1>Hi, I'm <span>JAMES</span></h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Section --> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about_me.jpeg" alt="About Me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm James Victor Buela, a computer engineering student at University of The East. 
+                        I am passionate about technology and I enjoy learning new things. At the age of 16 years old,
+                        I have started exploring and experimented with computer hardware and eventually, it became a hobby. 
+                        And for me, I believe that the so-called hobby sparked an interest; so I took up computer engineering.
+                        Furthermore, knowing myself, I always seek new opportunities to learn and grow. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>                        
+                    </div>
+                    <!-- Tab Content -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Computer Enthusiast</span><br>PC Troubleshoot and Repair</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - 2024</span><br>Intern At City Of Engineering San Juan</li>
+                        </ul>
+                    </div>  
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>University of The East</span><br>Computer Engineering</li>
+                            <li><span>San Juan Senior High School</span><br>TVL / ICT</li>
+                            <li><span>San Juan High School</span><br>Secondary School</li>
+                            <li><span>San Juan Elementary School</span><br>Primary School</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+    </div> 
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Computer Hardware Repair</h2>
+                    <p>I have experience in repairing hardware components within the system unit, including tasks such as 
+                    diagnosing and troubleshooting faulty parts, replacing damaged components like hard drives, RAM, power supplies, 
+                    and motherboards; ensuring the overall functionality and performance of the system. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Software Installation</h2>
+                    <p> I have experience in installing a wide range of software, including productivity suites 
+                        like Microsoft 365 applications—such as Word, Excel, PowerPoint, Outlook, and Teams—as well as various
+                        online computer games. This involves setting up the software, configuring user preferences, 
+                        ensuring compatibility with system requirements, and troubleshooting any installation or runtime issues that may arise.
+                     </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-windows"></i>
+                    <h2>OS Upgrade and Reformat</h2>
+                    <p>I have extensive experience in configuring various operating systems, including Linux, macOS, and Windows. 
+                        This involves setting up and customizing system environments to meet user needs, installing and managing 
+                        software packages, configuring system settings, and ensuring optimal performance and security. Furthermore, 
+                        I am skilled in reformatting computers as needed, which includes backing up essential data, performing clean installations 
+                        of operating systems, partitioning hard drives, and configuring boot options. </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section --> 
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png" alt="Guessing Game">
+                    <div class="layer">
+                        <h3>Guessing Game</h3>
+                        <p>This simple guessing game where the player tries to guess three random numbers generated by the computer. 
+                            The numbers are between 1 and 10, and the player has a limited number of attempts to guess all three correctly. </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt="Jak En Poy">
+                    <div class="layer">
+                        <h3>Jak En Poy</h3>
+                        <p>Jak En Poy is a classic rock, paper, scissors game where the player competes against the computer. 
+                            The player chooses between rock, paper, or scissors, and the computer randomly selects its choice.
+                            The game interface displays the current score and a message indicating whether the player won, lost, or tied each round.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" alt="In Between Cards">
+                    <div class="layer">
+                        <h3>In Between Cards</h3>
+                        <p>In Between Cards is an engaging card game where the player aims to guess if a drawn card falls between two randomly selected numbers. 
+                            The game begins with the computer generating two numbers, and the player is dealt a card from a deck.
+                            The game includes options for different betting amounts and win conditions, adding excitement and strategy to each round.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> buela.jamesvictor@ue.edu.ph</p>
+                    <p><i class="fa-solid fa-phone"></i> 0994 963 67746</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/buelajamez/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/http.jamezzz/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/james-buela-3a2689325/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 James Buela. All rights reserved.</p>
+    </div>
+</div>
+    <!-- JavaScript -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+        
+        function opentab(tabName, event) {
+            var i;
+            var x = document.getElementsByClassName("tab-contents");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            document.getElementById(tabName).style.display = "block";
+            
+            var tablinks = document.getElementsByClassName("tab-links");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+</body>
+</html>
